@@ -58,6 +58,7 @@ dokka {
 }
 
 mavenPublishing {
+    @Suppress("UnstableApiUsage")
     pomFromGradleProperties()
     configure(com.vanniktech.maven.publish.KotlinMultiplatform())
     publishToMavenCentral(com.vanniktech.maven.publish.SonatypeHost.CENTRAL_PORTAL)
