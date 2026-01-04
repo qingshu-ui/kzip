@@ -2,6 +2,7 @@ package = libzip
 headers = zip/zip.h
 headerFilter = zip/*
 
-staticLibraries.linux = libzip.linuxX64.a
+staticLibraries.linux_x64 = libzip.linuxX64.a
+staticLibraries.linux_arm64 = libzip.linuxArm64.a
 staticLibraries.mingw = libzip.mingwX64.a
 libraryPaths = src/nativeInterop/cinterop
