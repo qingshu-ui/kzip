@@ -1,0 +1,8 @@
+#!/bin/bash
+./gradlew clean \
+	build \
+	publishToMavenLocal \
+	-Dhttp.proxyHost=127.0.0.1 \
+	-Dhttp.proxyPort=7897 \
+	-Dhttps.proxyHost=127.0.0.1 \
+	-Dhttps.proxyPort=7897
