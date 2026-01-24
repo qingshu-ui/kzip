@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     kotlin("multiplatform") version "2.1.20"
     id("org.jetbrains.dokka") version "2.0.0"
@@ -17,7 +19,11 @@ kotlin {
     }
     explicitApi()
 
-    jvm()
+    jvm {
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_17
+        }
+    }
 
     mingwX64()
 
